@@ -21,7 +21,7 @@ def main():
     never_seen_members.log()
 
     # Report for users who were created before activity data was collected
-    report_file = "reports/never_seen.csv"
+    report_file = "reports/very_old.csv"
     param_filter = 'lastSeen:{"noData":true}'
     very_old_members = MemberList(param_filter=param_filter, report_file=report_file)
     very_old_members.log()
